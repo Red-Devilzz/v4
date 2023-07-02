@@ -2,7 +2,6 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
-
 clear
 red='\e[1;31m'
 green='\e[1;32m'
@@ -31,15 +30,12 @@ dart=$(cat /etc/hosts | grep -w `hostname` | awk '{print $2}')
 if [[ "$hst" != "$dart" ]]; then
 echo "$localip $(hostname)" >> /etc/hosts
 fi
-
 mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-
-
 echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
 sleep 1
 echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
