@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -8,6 +9,7 @@ green='\e[1;32m'
 yell='\e[1;33m'
 tyblue='\e[1;36m'
 NC='\e[0m'
+####
 purple() { echo -e "\\033[35;1m${*}\\033[0m"; }
 tyblue() { echo -e "\\033[36;1m${*}\\033[0m"; }
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
