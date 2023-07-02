@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # ==================================================
-
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -307,7 +306,7 @@ wget -O about "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/about.s
 wget -O auto-reboot "https://raw.githubusercontent.com/Red-Devilzz/v4/main/menu/auto-reboot.sh"
 wget -O restarts "https://raw.githubusercontent.com/Red-Devilzz/v4/main/menu/restarts.sh"
 wget -O bw "https://raw.githubusercontent.com/Red-Devilzz/v4/main/menu/bw.sh"
-wget -O domainfree "https://raw.githubusercontent.com/Red-Devilzz/v4/main/domainfree.sh
+wget -O domainfree "https://raw.githubusercontent.com/Red-Devilzz/v4/main/domainfree.sh"
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/Red-Devilzz/v4/main/port/port-ssl.sh"
