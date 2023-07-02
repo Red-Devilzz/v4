@@ -208,8 +208,7 @@ history -c
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
-if [ $aureb -gt $b ]
-then
+if [ $aureb -gt $b ];  then
 gg="PM"
 else
 gg="AM"
